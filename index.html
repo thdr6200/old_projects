@@ -1,0 +1,211 @@
+<!DOCTYPE html> <!--Spécifie le type de document-->
+<html lang="fr"> <!--Spécifie la langue de la page-->
+<head>
+    <meta charset="UTF-8"> <!--Pour prendre en compte les caracètes spéciaux-->
+    <title>Ma première page web</title> <!--Mettre un titre de page-->
+</head>
+<body>
+    <hr> <!--Ligne séparatrice-->
+
+    <!--Formatage texte-->
+    Page HTML<br> <!--br retour à la ligne-->
+
+    <strong>Ce texte est important</strong><br>
+    <em>Ce texte est important</em><br>
+    <mark>Surligner un texte important</mark><br>
+
+    <b>C'est la meme chose que strong sauf que c'est moins important</b><br>
+
+    <i>Mettre un element à part d'un texte</i><br>
+
+    <s>Indiquer qu'un element n'est pas important/n'a pas d'interet ou érroné</s><br>
+
+    <del>Supprimer/remplacer une ancienne information</del><br>
+
+    <ins>Remplacer ancienne information</ins><br>
+
+    <h1>Mon titre le plus grand</h1> <!--h1 à h6 pour les titre du plus important au moins important
+                                         une section ne peut avoir qu'un seul h1-->
+
+    <p align=right>Droite</p> <!--met le texte à droite-->
+    <p align=left>Gauche</p> <!--met le texte à gauche-->
+    <p align=center>Centre</p> <!--centre le texte-->
+    <p align=justify>Justifier</p> <!--Fais en sorte qu'un texte
+                                       soit sur une seule page-->
+
+    <q>Citation d'un contenu externe qui est court</q><br>
+    <q cite="https://source.be">Mettre la source de la citation</q><br>
+    <cite>Citation d'un contenu qui est court</cite><br> <!--Permet de citer un titre (oeuvre, document, film, rapport,ect) mais pas
+                                                             les noms de personnes (auteurs, ect) et de manière courte -->
+    <blockquote>
+        <p>Permet de citer tout un paragraphe ou tout un ensemble de texte avec les noms de personnes aussi</p><br>
+    </blockquote>
+    <blockquote cite="https://source.be">
+        <p>Mettre la source de la citation s'il y en a</p><br>
+    </blockquote>
+
+    <details>
+        <summary>Changer le nom de la catégorie</summary>
+        Ne pas afficher un élément par défaut (pour ne pas spoiler ou autre)<br>
+    </details>
+
+    <a href="https://site.com">Texte redirigeant vers un lien</a><br>
+    <a href="https://site.com" title="infobulle">Texte redirigeant vers un lien avec une infobulle</a><br>
+    <a href="https://site.com" title="infobulle" target="_blank">Meme chose mais ouvre le lien dans un nouvel onglet</a><br>
+    <a href="mailto:monemail@gmail.com">Lance une application de messagerie electronique</a>
+
+    <abbr title="Hypertext Markup Language">HTML</abbr> <!--Indique le nom complet de l'abbreviation-->
+
+    <!--Le navigateur mettra en valeur les informations de contact-->
+    <address>
+        M. Chuck Norris<br>
+        16 Rue des Cerises<br>
+        XXXXX MAVILLE<br>
+    </address><br>
+
+    <bdi>مرحبا</bdi><br> <!--Ecrit selon le sens déduit-->
+    <bdo dir="rtl">Bonjour</bdi><br> <!--Droite à gauche-->
+    <bdo dir="ltr">Bonjour</bdi><br> <!--Gauche à droite-->
+
+    <p><dfn>Html</dfn> est un langage informatique pour créer des pages web.</p> <!--Indique que la définition se trouve juste après ou juste avant-->
+    <dl> <!--Faire une liste-->
+        <dt>HTML</dt> <!--Donner le ou les termes-->
+        <dt>xHTML</dt>
+        <dd>Langage informatique pour créer des pages web.</dd> <!--Donner la définition-->
+        <dt>CSS</dt>
+        <dd>Langage informatique pour mettre en forme des pages web.</dd>
+    </dl>
+
+    <p>Etat du projet: <progress value="50" max="100"></progress></p> <!--Crée une barre de progression avec une valeur et un valeur maximale-->
+    <p>Température du corps: <meter optimum="37.4" value="37">37 degrés</meter></p> <!--Crée une barre de progression juste pour les valeurs scalaires (donc chiffres, nombres) et ce qui
+                                                                                        est écrit entre les balises meter est analysé pas le navigateur
+                                                                                        
+                                                                                        Attributs:
+                                                                                            value (valeur)
+                                                                                            min (valeur minimale)
+                                                                                            max (valeur maximale)
+                                                                                            high (valeur considérée comme haute)
+                                                                                            low (valeur considérée comme basse)
+                                                                                            optimum (valeur considérée comme optimale)-->
+    <p>Formule du dioxyde de corbone: CO<sub>2</sub></p> <!--Mettre en indice-->
+    <p>Terrain de football: 100m<sup>2</sup></p> <!--Mettre en exposant-->
+
+    <!--Couper un mot ou un url-->
+    bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<wbr>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<wbr>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<wbr>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<wbr>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>
+    
+    <p>Dire bonjour: <code>print("Hello World !")</code> <!--Mettre en évidence un code informatique ou un langage de programmation-->
+    <p>Résultat du code: <samp></samp></p> <!--Mettre en évidence le résultat d'un code informatique ou un langage de programmation-->
+    <p>Enregistrer un doc avec le raccourci: <kbd>Ctlr + S</kbd></p> <!--Mettre en évidence un élément du clavier ou un raccourci-->
+
+    <p>2+2 = <output>4</output></p> <!--Montre que c'est le résultat de quelque chose-->
+
+    <pre>Bonjour        tout le monde.</pre> <!--Prend en compte tout les espaces et retours à la ligne-->
+
+    <ruby> <!--Marquer le texte qui a une annotation phonétique-->
+        あ <rp>(</rp><rt>A</rt><rp>)</rp> <!--rp pour indiquer au navigateur que c'est une annotation et rt pour marquer l'annotation au-dessus-->
+        り <rt>RI</rt>
+        が <rt>GA</rt>
+        と <rt>TO</rt>
+        う <rt>U</rt>
+    </ruby><br>
+
+    <p>Début du concours le <time>25 Janvier 2018</time></p><br> <!--Indique au navigateur que c'est une date-->
+    <p>Début du concours le <time datetime="année-mois-jour heure:minute:seconde">25 Janvier 2018</time></p><br> <!--Meme chose qu'au-dessus sauf qu'on spécifie encore mieux la date-->
+    
+    <p>Informatique: <var>x</var> = <var>14</var></p><br> <!--Afficher des variables (informatique, mathématiques, ect)-->
+    <p>Mathématiques: <var>x<sup>2</sup></var> + 5</p><br>
+
+    <!--Listes (elles sont imbriquables, on peut avoir une sous-liste d'une liste)-->
+
+    <ul> <!--Crée un liste non-ordonnée-->
+        <li>Premier élément</li> <!--Ajoute un élément-->
+        <li>Second</li>
+        <li>Un autre</li>
+    </ul>
+
+    <ol> <!--Crée un liste ordonnée-->
+        <li>Premier élément</li> <!--Ajoute un élément-->
+        <li>Second</li>
+        <li>Un autre</li>
+    </ol>
+
+    <ol reversed> <!--Crée un liste ordonnée mais commence de la dernière étape-->
+        <li>Premier élément</li> <!--Ajoute un élément-->
+        <li>Second</li>
+        <li>Un autre</li>
+    </ol>
+
+    <ol start="10"> <!--Crée un liste ordonnée mais commence avec une numérotation personnalisée-->
+        <li>Premier élément</li> <!--Ajoute un élément-->
+        <li>Second</li>
+        <li>Un autre</li>
+    </ol>
+
+    <ol type="a"> <!--type="A", type="I", type="i"--> <!--Crée un liste ordonnée avec n'importe quel type de structure-->
+        <li>Premier élément</li> <!--Ajoute un élément-->
+        <li>Second</li>
+        <li>Un autre</li>
+    </ol>
+
+    <!--Tableau-->
+    <!--Il y a l'attribut rowspan et colspan utilisables pour les th et td (ça rassemble plusieurs cellules en une)-->
+    <table>
+        <caption>Listing de jeux-vidéos</caption> <!--Titre du table (facultatif)-->
+        <thead> <!--En-tete (facultative)-->
+            <tr> <!--Crée une ligne de tableau-->
+                <th>/</th> 
+                <th>Genre et type</th> <!--Crée une cellule d'en-tete de tableau-->
+                <th abbr="Prix">Prix de vente</th>
+            </tr>
+        </thead>
+        <tbody> <!--Corps (facultatif)-->
+            <tr>
+                <th>Assassin's Creed</th>
+                <td>Action-Aventure</td> <!--Crée une cellule de donnée de tableau-->
+                <td>69.99$</td>
+            </tr>
+            <tr>
+                <th>Rocket League</th>
+                <td>Sport</td>
+                <td>24.99$</td>
+            </tr>
+        </tbody>
+        <!--Il y a aussi <tfoot></tfoot> qui est facultatif est rarement utilisé-->
+    </table>
+    <!--Formulaires-->
+    <!--
+    <form method="get|post" action="#" name="MonFormulaire" target="_blank" autocomplete="off" enctype="" accept-charset="">
+    </form>
+
+    <form method="post" action="">
+        <p><label for="prenom">Nom: </label><input id="prenom" name="username" placeholder="Entrez votre nom"></p>
+    </form>
+    -->
+    <form method="post" action="">
+        <input type="date" name="champFormulaire">
+    </form>
+    <!--
+        Attributs:
+
+            pattern (vérifie un champ avec des expressions rationnelles, regex)
+            required (remplir un champ obligatoirement)
+
+    -->
+    <!--
+        Types:
+
+            text (texte visible)
+            password (texte masqué par des points noirs)
+            checkbox (case à cocher)
+            radio (case à cocher obligatoirement)
+            color (gestion de couleurs) ==> on peut utiliser l'attribut value pour spécifier une couleur par défaut
+            date (affiche calendrier)
+            search (recherche)
+            range (crée une ligne où on peut déplacer jusqu'à un nombre) ==> min (valeur minimale), max (valeur maximale), step (valeur de déplacement)
+            number
+            hidden (cache un champ)
+            submit (bouton) ==> value (texte écrit sur le bouton)
+            reset (efface le texte d'un champ)
+    -->
+</body>
+</html>
