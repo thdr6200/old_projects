@@ -1,0 +1,15 @@
+{
+    "speed": 20,
+    "player_score": 0,
+    "player2_score": 0,
+    "ball_radius": 20,
+    "ball_x_speed": 25,
+    "ball_y_speed": 25,
+    "end_score": 3,
+    "running": true,
+    "player_up": false,
+    "player_down": false,
+    "player2_up": false,
+    "player2_down": false,
+    "mouse_visibility": false
+}
